@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>World News · Tuesday 24 November 2026 · in one image</title>
+<title>World News · Tuesday 24 November 2026 · 21 stories in one image</title>
 <style>
   * { margin: 0; padding: 0; box-sizing: border-box; }
   html, body { width: 1024px; height: 1024px; overflow: hidden; }
@@ -19,96 +19,73 @@
 
   /* ================= masthead ================= */
   .masthead {
-    position: absolute; top: 8px; left: 0; width: 1024px; height: 168px;
-    padding: 0 28px; border-bottom: 1px solid #15171b;
+    position: absolute; top: 8px; left: 0; width: 1024px; height: 100px;
+    padding: 0 26px; border-bottom: 1px solid #15171b;
   }
   .mast-day {
-    position: absolute; left: 28px; top: 20px;
-    font-weight: 700; font-size: 18px; line-height: 1; letter-spacing: 4px; color: #46566b;
+    position: absolute; left: 26px; top: 15px;
+    font-weight: 700; font-size: 16px; line-height: 1; letter-spacing: 4px; color: #46566b;
   }
-  .mast-brand { position: absolute; right: 28px; top: 15px; display: flex; align-items: center; gap: 14px; }
-  .mast-strap { font-weight: 700; font-size: 15px; line-height: 1; letter-spacing: 5px; color: #46566b; }
+  .mast-brand { position: absolute; right: 26px; top: 12px; display: flex; align-items: center; gap: 13px; }
+  .mast-strap { font-weight: 700; font-size: 15px; line-height: 1; letter-spacing: 3.5px; color: #46566b; }
   .mast-badge {
     background: #b3221c; color: #ffffff; font-weight: 700; font-size: 14px;
-    line-height: 1; letter-spacing: 2px; padding: 7px 10px 8px;
+    line-height: 1; letter-spacing: 2px; padding: 6px 10px 7px;
   }
   .mast-date {
-    position: absolute; left: 27px; top: 48px;
+    position: absolute; left: 25px; top: 32px;
     font-family: 'DejaVu Serif', Georgia, serif; font-weight: 700;
-    font-size: 74px; line-height: 1; letter-spacing: -1px;
+    font-size: 62px; line-height: 1; letter-spacing: -1px;
   }
-  .mast-lede {
-    position: absolute; left: 28px; top: 138px;
-    display: flex; align-items: center; gap: 11px;
-    font-size: 17px; line-height: 1; color: #15171b;
-  }
-  .mast-lede .sq { width: 11px; height: 11px; background: #b3221c; }
 
   /* ================= lead ================= */
-  .lead { position: absolute; top: 186px; left: 28px; width: 968px; height: 250px; display: flex; gap: 20px; }
-  .lead-copy { width: 600px; }
+  .lead { position: absolute; top: 110px; left: 26px; width: 972px; height: 218px; display: flex; gap: 20px; }
+  .lead-copy { width: 584px; }
   .kicker { font-weight: 700; font-size: 15px; line-height: 1; letter-spacing: 3px; color: #b3221c; }
   .lead-copy h2 {
     font-family: 'DejaVu Serif', Georgia, serif; font-weight: 700;
-    font-size: 44px; line-height: 1.02; margin: 6px 0 0 -1px;
+    font-size: 36px; line-height: 1.03; margin: 7px 0 0 -1px;
   }
-  .lead-deck { font-size: 19px; line-height: 1.4; margin-top: 9px; }
-  .lead-art { position: relative; flex: 1; background: #15171b; overflow: hidden; }
+  .lead-deck { font-size: 16px; line-height: 1.5; margin-top: 10px; }
+  .lead-art { position: relative; flex: 1; align-self: flex-start; height: 210px; background: #15171b; overflow: hidden; }
   .lead-art svg { position: absolute; top: 0; left: 0; }
   .lead-cap {
-    position: absolute; left: 0; right: 0; bottom: 13px; text-align: center;
-    font-size: 15px; font-weight: 700; letter-spacing: 4px; color: #f2efe6;
+    position: absolute; left: 12px; bottom: 9px;
+    font-size: 12.5px; font-weight: 700; letter-spacing: 3px; color: #f2efe6;
   }
 
-  /* ================= story grid ================= */
+  /* ================= eighteen panels: three columns, six rows ================= */
   .grid {
-    position: absolute; top: 440px; left: 28px; width: 968px; height: 536px;
-    display: grid; grid-template-columns: repeat(2, 1fr); grid-template-rows: 145px 145px 145px 83px;
-    column-gap: 20px; row-gap: 6px;
+    position: absolute; top: 330px; left: 24px; width: 976px; height: 650px;
+    display: grid; grid-template-columns: repeat(3, 1fr); grid-template-rows: repeat(6, 1fr);
+    column-gap: 10px; row-gap: 4px;
   }
   .panel {
-    position: relative; background: #ffffff; border-left: 5px solid #b3221c;
-    padding: 10px 10px 8px 14px; overflow: hidden;
+    position: relative; background: #ffffff; border-left: 4px solid #b3221c;
+    padding: 6px 8px; display: flex; gap: 6px; overflow: hidden;
   }
-  .panel-top { display: flex; gap: 10px; }
-  .panel-copy { flex: 1; min-width: 0; }
-  .chip {
-    flex: none; width: 46px; height: 46px; border: 2.5px solid #b3221c;
-    border-radius: 11px; background: #f2efe6;
-  }
-  .chip svg { display: block; width: 100%; height: 100%; }
-  .panel-copy .kicker { font-size: 15px; letter-spacing: 2.4px; }
-  .panel-copy h3 {
+  .panel.slate { border-left-color: #46566b; }
+  .picon { flex: none; width: 26px; height: 26px; margin-top: 1px; }
+  .pcopy { flex: 1; min-width: 0; }
+  .kick { font-weight: 700; font-size: 12px; line-height: 1; letter-spacing: 1.5px; color: #b3221c; }
+  .pcopy h3 {
     font-family: 'DejaVu Serif', Georgia, serif; font-weight: 700;
-    font-size: 23px; line-height: 1.05; margin: 4px 0 0 -1px;
+    font-size: 17px; line-height: 1.05; margin: 3px 0 0 -1px;
   }
-  .panel-note { font-size: 16px; line-height: 1.45; margin-top: 5px; }
-
-  /* the bottom rail: three short briefs */
-  .strip { grid-column: 1 / span 2; display: grid; grid-template-columns: repeat(3, 1fr); gap: 0 12px; }
-  .brief {
-    position: relative; background: #ffffff; border-left: 4px solid #46566b;
-    padding: 8px 8px 6px 12px; overflow: hidden; display: flex; gap: 8px;
-  }
-  .brief .chip { width: 38px; height: 38px; border-radius: 9px; }
-  .brief-copy { flex: 1; min-width: 0; }
-  .brief-copy .kicker { font-size: 14px; letter-spacing: 2px; }
-  .brief-copy h4 {
-    font-family: 'DejaVu Serif', Georgia, serif; font-weight: 700;
-    font-size: 16px; line-height: 1.06; margin: 3px 0 0 -1px;
-  }
+  .pcopy h3.tight { font-size: 15.5px; }
+  .pcopy p { font-size: 12px; line-height: 1.5; margin-top: 3px; }
 
   /* ================= footer ================= */
   .footer {
     position: absolute; top: 980px; left: 0; width: 1024px; height: 44px;
     background: #15171b; color: #f2efe6; display: flex; align-items: center;
-    padding: 0 16px; gap: 12px; overflow: hidden;
+    padding: 0 16px; gap: 11px; overflow: hidden;
   }
   .footer .also {
     font-weight: 700; font-size: 14px; line-height: 1; letter-spacing: 1.5px; color: #ffffff;
     padding-right: 11px; border-right: 1px solid #46566b; white-space: nowrap;
   }
-  .footer .ftxt { font-size: 14.5px; line-height: 1.2; white-space: nowrap; }
+  .footer .ftxt { font-size: 14px; line-height: 1.2; white-space: nowrap; }
 </style>
 </head>
 <body>
@@ -117,45 +94,46 @@
   <header class="masthead">
     <div class="mast-day">TUESDAY</div>
     <div class="mast-brand">
-      <span class="mast-strap">WORLD NEWS</span>
+      <span class="mast-strap">WORLD NEWS &middot; 21 STORIES &middot; 12 REGIONS</span>
       <span class="mast-badge">IN ONE IMAGE</span>
     </div>
     <h1 class="mast-date">24 NOVEMBER 2026</h1>
-    <div class="mast-lede"><span class="sq"></span>Ten stories from eight regions in one day.</div>
   </header>
 
   <section class="lead">
     <div class="lead-copy">
       <div class="kicker">MARKETS &middot; NEW YORK</div>
       <h2>AI RALLY UNWINDS<br>AS NVIDIA GIVES<br>BACK $240BN</h2>
-      <p class="lead-deck">Jensen Huang&rsquo;s return, brokered by Trump, lost its shine: Nvidia fell more than 5% and the Nasdaq slid. Trump says he may pardon Huang before his Senate testimony.</p>
+      <p class="lead-deck">Jensen Huang&rsquo;s return, brokered by Trump, did not hold: Nvidia fell more than 5% and gave back about $240bn. Trump says he may pardon Huang before his Senate testimony.</p>
     </div>
     <figure class="lead-art">
-      <svg viewBox="0 0 348 244" width="348" height="244" xmlns="http://www.w3.org/2000/svg">
-        <!-- the chip: body, pins, die -->
-        <rect x="99" y="41" width="150" height="150" rx="14" fill="#232a33" stroke="#f2efe6" stroke-width="4" />
-        <line x1="129" y1="41" x2="129" y2="25" stroke="#f2efe6" stroke-width="4" />
-        <line x1="159" y1="41" x2="159" y2="25" stroke="#f2efe6" stroke-width="4" />
-        <line x1="189" y1="41" x2="189" y2="25" stroke="#f2efe6" stroke-width="4" />
-        <line x1="219" y1="41" x2="219" y2="25" stroke="#f2efe6" stroke-width="4" />
-        <line x1="129" y1="191" x2="129" y2="207" stroke="#f2efe6" stroke-width="4" />
-        <line x1="159" y1="191" x2="159" y2="207" stroke="#f2efe6" stroke-width="4" />
-        <line x1="189" y1="191" x2="189" y2="207" stroke="#f2efe6" stroke-width="4" />
-        <line x1="219" y1="191" x2="219" y2="207" stroke="#f2efe6" stroke-width="4" />
-        <line x1="99" y1="56" x2="83" y2="56" stroke="#f2efe6" stroke-width="4" />
-        <line x1="99" y1="86" x2="83" y2="86" stroke="#f2efe6" stroke-width="4" />
-        <line x1="99" y1="116" x2="83" y2="116" stroke="#f2efe6" stroke-width="4" />
-        <line x1="99" y1="146" x2="83" y2="146" stroke="#f2efe6" stroke-width="4" />
-        <line x1="99" y1="176" x2="83" y2="176" stroke="#f2efe6" stroke-width="4" />
-        <line x1="249" y1="56" x2="265" y2="56" stroke="#f2efe6" stroke-width="4" />
-        <line x1="249" y1="86" x2="265" y2="86" stroke="#f2efe6" stroke-width="4" />
-        <line x1="249" y1="116" x2="265" y2="116" stroke="#f2efe6" stroke-width="4" />
-        <line x1="249" y1="146" x2="265" y2="146" stroke="#f2efe6" stroke-width="4" />
-        <line x1="249" y1="176" x2="265" y2="176" stroke="#f2efe6" stroke-width="4" />
-        <rect x="154" y="96" width="40" height="40" fill="#46566b" />
+      <svg viewBox="0 0 368 210" width="368" height="210" xmlns="http://www.w3.org/2000/svg">
+        <!-- the chip: package, pins on all four sides, die -->
+        <rect x="119" y="36" width="130" height="130" rx="13" fill="#232a33" stroke="#f2efe6" stroke-width="4" />
+        <line x1="137" y1="36" x2="137" y2="22" stroke="#f2efe6" stroke-width="4" />
+        <line x1="162" y1="36" x2="162" y2="22" stroke="#f2efe6" stroke-width="4" />
+        <line x1="187" y1="36" x2="187" y2="22" stroke="#f2efe6" stroke-width="4" />
+        <line x1="212" y1="36" x2="212" y2="22" stroke="#f2efe6" stroke-width="4" />
+        <line x1="237" y1="36" x2="237" y2="22" stroke="#f2efe6" stroke-width="4" />
+        <line x1="137" y1="166" x2="137" y2="180" stroke="#f2efe6" stroke-width="4" />
+        <line x1="162" y1="166" x2="162" y2="180" stroke="#f2efe6" stroke-width="4" />
+        <line x1="187" y1="166" x2="187" y2="180" stroke="#f2efe6" stroke-width="4" />
+        <line x1="212" y1="166" x2="212" y2="180" stroke="#f2efe6" stroke-width="4" />
+        <line x1="237" y1="166" x2="237" y2="180" stroke="#f2efe6" stroke-width="4" />
+        <line x1="119" y1="49" x2="105" y2="49" stroke="#f2efe6" stroke-width="4" />
+        <line x1="119" y1="75" x2="105" y2="75" stroke="#f2efe6" stroke-width="4" />
+        <line x1="119" y1="101" x2="105" y2="101" stroke="#f2efe6" stroke-width="4" />
+        <line x1="119" y1="127" x2="105" y2="127" stroke="#f2efe6" stroke-width="4" />
+        <line x1="119" y1="153" x2="105" y2="153" stroke="#f2efe6" stroke-width="4" />
+        <line x1="249" y1="49" x2="263" y2="49" stroke="#f2efe6" stroke-width="4" />
+        <line x1="249" y1="75" x2="263" y2="75" stroke="#f2efe6" stroke-width="4" />
+        <line x1="249" y1="101" x2="263" y2="101" stroke="#f2efe6" stroke-width="4" />
+        <line x1="249" y1="127" x2="263" y2="127" stroke="#f2efe6" stroke-width="4" />
+        <line x1="249" y1="153" x2="263" y2="153" stroke="#f2efe6" stroke-width="4" />
+        <rect x="166" y="83" width="36" height="36" fill="#46566b" />
         <!-- the fall: a red arrow plunging straight through the chip -->
-        <rect x="166" y="12" width="16" height="188" fill="#b3221c" />
-        <polygon points="174,238 146,196 202,196" fill="#b3221c" />
+        <rect x="176" y="4" width="16" height="166" fill="#b3221c" />
+        <polygon points="184,204 156,166 212,166" fill="#b3221c" />
       </svg>
       <figcaption class="lead-cap">NVIDIA</figcaption>
     </figure>
@@ -163,185 +141,268 @@
 
   <section class="grid">
     <article class="panel">
-      <div class="panel-top">
-        <div class="panel-copy">
-          <div class="kicker">MIDDLE EAST</div>
-          <h3>HOUTHI DRONE HITS<br>RIYADH&rsquo;S PIF TOWER AGAIN</h3>
-        </div>
-        <span class="chip">
-          <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
-            <line x1="14" y1="12" x2="33" y2="31" stroke="#15171b" stroke-width="3" />
-            <line x1="33" y1="12" x2="14" y2="31" stroke="#15171b" stroke-width="3" />
-            <circle cx="14" cy="12" r="5.5" fill="none" stroke="#15171b" stroke-width="4" />
-            <circle cx="33" cy="12" r="5.5" fill="none" stroke="#15171b" stroke-width="4" />
-            <circle cx="14" cy="31" r="5.5" fill="none" stroke="#15171b" stroke-width="4" />
-            <circle cx="33" cy="31" r="5.5" fill="none" stroke="#15171b" stroke-width="4" />
-            <rect x="18.5" y="16.5" width="10" height="10" fill="#15171b" />
-            <polygon points="63,46 53.6,49.3 55.5,59.0 48,52.5 40.5,59.0 42.4,49.3 33,46 42.4,42.8 40.5,33.0 48,39.5 55.5,33.0 53.6,42.8" fill="#b3221c" />
-          </svg>
-        </span>
+      <svg class="picon" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+        <rect x="3" y="5" width="10" height="23" fill="none" stroke="#15171b" stroke-width="3" />
+        <line x1="14" y1="16" x2="25" y2="16" stroke="#b3221c" stroke-width="3.5" />
+        <polygon points="30,16 22.5,11 22.5,21" fill="#b3221c" />
+      </svg>
+      <div class="pcopy">
+        <div class="kick">MIDDLE EAST</div>
+        <h3>COALITION ORDERS<br>HODEIDAH EVACUATED</h3>
+        <p>Civilians are told to leave the Red Sea port as the coalition presses on.</p>
       </div>
-      <p class="panel-note">The second strike on the tower in a week; the Houthis also claim an attack on the Rabigh refinery.</p>
+    </article>
+
+    <article class="panel slate">
+      <svg class="picon" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+        <rect x="3" y="5" width="26" height="17" rx="3" fill="none" stroke="#15171b" stroke-width="3" />
+        <line x1="16" y1="5" x2="16" y2="22" stroke="#15171b" stroke-width="2.5" />
+        <rect x="6" y="9" width="6.5" height="5" fill="#b3221c" />
+        <circle cx="9.5" cy="25" r="2.8" fill="#15171b" />
+        <circle cx="22.5" cy="25" r="2.8" fill="#15171b" />
+      </svg>
+      <div class="pcopy">
+        <div class="kick">YEMEN</div>
+        <h3>SAUDI STRIKES ON<br>BUSES KILL 26</h3>
+        <p>The death toll rises as the war widens across the country.</p>
+      </div>
     </article>
 
     <article class="panel">
-      <div class="panel-top">
-        <div class="panel-copy">
-          <div class="kicker">IRAN</div>
-          <h3>TEHRAN SAYS ITS STRIKES<br>TARGETED US SITES</h3>
-        </div>
-        <span class="chip">
-          <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="32" cy="32" r="24.5" fill="none" stroke="#15171b" stroke-width="4" />
-            <circle cx="32" cy="32" r="15" fill="none" stroke="#15171b" stroke-width="3" />
-            <polygon points="17.2,27.8 4.5,27.8 8.7,19.3" fill="#15171b" />
-            <polygon points="27.8,17.2 27.8,4.5 19.3,8.7" fill="#15171b" />
-            <polygon points="54,54 38.6,49.2 17.2,27.8 27.8,17.2 49.2,38.6" fill="#15171b" />
-            <polygon points="17.2,27.8 27.8,17.2 10,10" fill="#b3221c" />
-          </svg>
-        </span>
+      <svg class="picon" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+        <polygon points="2,21 30,21 25,27 7,27" fill="#15171b" />
+        <rect x="10" y="13" width="12" height="8" fill="#15171b" />
+        <line x1="16" y1="13" x2="16" y2="5" stroke="#15171b" stroke-width="2.5" />
+        <line x1="16" y1="6" x2="25" y2="6" stroke="#b3221c" stroke-width="2.5" />
+      </svg>
+      <div class="pcopy">
+        <div class="kick">IRAN</div>
+        <h3>TRUMP THREATENS TO<br>SINK IRANIAN VESSELS</h3>
+        <p>A US strike hits an oil tanker as Gulf tensions rise.</p>
       </div>
-      <p class="panel-note">A civilian plant in Bahrain&rsquo;s Sitra was hit and two were wounded; Saudi Arabia condemned it.</p>
+    </article>
+
+    <article class="panel slate">
+      <svg class="picon" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+        <polygon points="16,2 10.5,10 16,13 21.5,10" fill="#b3221c" />
+        <rect x="9" y="15" width="14" height="15" rx="2" fill="#ffffff" stroke="#15171b" stroke-width="3" />
+        <line x1="9" y1="20" x2="23" y2="20" stroke="#15171b" stroke-width="2.5" />
+        <line x1="9" y1="25" x2="23" y2="25" stroke="#15171b" stroke-width="2.5" />
+      </svg>
+      <div class="pcopy">
+        <div class="kick">ENERGY</div>
+        <h3>FOURTH TANKER<br>HITS A MINE</h3>
+        <p>Iran says a fourth tanker struck a mine and caught fire in the Strait of Hormuz.</p>
+      </div>
     </article>
 
     <article class="panel">
-      <div class="panel-top">
-        <div class="panel-copy">
-          <div class="kicker">CHINA</div>
-          <h3>XI PURGES<br>SHANGHAI&rsquo;S PARTY BOSS</h3>
-        </div>
-        <span class="chip">
-          <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
-            <polygon points="32.0,12.0 37.9,30.3 57.1,30.4 41.6,41.9 47.2,60.3 32.0,49.5 16.8,60.3 22.4,41.9 6.9,30.4 26.1,30.3" fill="#b3221c" />
-            <rect x="14" y="5" width="6" height="54" fill="#15171b" />
-            <rect x="29" y="5" width="6" height="54" fill="#15171b" />
-            <rect x="44" y="5" width="6" height="54" fill="#15171b" />
-          </svg>
-        </span>
+      <svg class="picon" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="16" cy="16" r="13.5" fill="none" stroke="#15171b" stroke-width="3" />
+        <polygon points="16.0,3.8 16.8,5.9 19.0,6.0 17.2,7.4 17.9,9.6 16.0,8.3 14.1,9.6 14.8,7.4 13.0,6.0 15.2,5.9" fill="#b3221c" />
+        <polygon points="26.6,9.9 25.1,11.6 26.2,13.6 24.1,12.8 22.5,14.4 22.7,12.2 20.6,11.2 22.8,10.6 23.1,8.4 24.3,10.3" fill="#b3221c" />
+        <polygon points="26.6,22.1 24.3,21.7 23.1,23.6 22.8,21.4 20.6,20.8 22.7,19.9 22.5,17.6 24.1,19.2 26.2,18.4 25.1,20.4" fill="#b3221c" />
+        <polygon points="16.0,28.2 15.2,26.1 13.0,26.0 14.8,24.6 14.1,22.4 16.0,23.7 17.9,22.4 17.2,24.6 19.0,26.0 16.8,26.1" fill="#b3221c" />
+        <polygon points="5.4,22.1 6.9,20.4 5.8,18.4 7.9,19.2 9.5,17.6 9.3,19.8 11.4,20.8 9.2,21.4 8.9,23.6 7.7,21.7" fill="#b3221c" />
+        <polygon points="5.4,9.9 7.7,10.3 8.9,8.4 9.2,10.6 11.4,11.2 9.3,12.2 9.5,14.4 7.9,12.8 5.8,13.6 6.9,11.6" fill="#b3221c" />
+      </svg>
+      <div class="pcopy">
+        <div class="kick">EUROPE</div>
+        <h3>EU ADOPTS ITS 22ND<br>RUSSIA PACKAGE</h3>
+        <p>Von der Leyen announces the round as Brussels weighs 45 billion euros for Ukraine.</p>
       </div>
-      <p class="panel-note">Chen Jining, once seen as a future leader, is investigated in the widest shake-up in decades.</p>
+    </article>
+
+    <article class="panel slate">
+      <svg class="picon" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+        <rect x="5" y="4" width="22" height="24" rx="2" fill="#ffffff" stroke="#15171b" stroke-width="3" />
+        <line x1="11" y1="4" x2="11" y2="28" stroke="#15171b" stroke-width="2.5" />
+        <line x1="15" y1="11" x2="23" y2="11" stroke="#15171b" stroke-width="2.5" />
+        <line x1="15" y1="16" x2="23" y2="16" stroke="#15171b" stroke-width="2.5" />
+        <line x1="15" y1="21" x2="23" y2="21" stroke="#b3221c" stroke-width="2.5" />
+      </svg>
+      <div class="pcopy">
+        <div class="kick">EUROPE</div>
+        <h3>EU BUDGET<br>FIGHT DEEPENS</h3>
+        <p>Ambassadors reject Costa&rsquo;s budget plan days before a leaders&rsquo; summit.</p>
+      </div>
     </article>
 
     <article class="panel">
-      <div class="panel-top">
-        <div class="panel-copy">
-          <div class="kicker">AFRICA</div>
-          <h3>SUDAN&rsquo;S CAPITAL HIT<br>AS ITS GRID FAILS</h3>
-        </div>
-        <span class="chip">
-          <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
-            <line x1="16" y1="59" x2="28" y2="12" stroke="#15171b" stroke-width="4" />
-            <line x1="48" y1="59" x2="36" y2="12" stroke="#15171b" stroke-width="4" />
-            <line x1="26" y1="14" x2="38" y2="14" stroke="#15171b" stroke-width="4" />
-            <line x1="24" y1="24" x2="40" y2="24" stroke="#15171b" stroke-width="3.5" />
-            <line x1="20" y1="36" x2="44" y2="36" stroke="#15171b" stroke-width="3.5" />
-            <line x1="16" y1="48" x2="48" y2="48" stroke="#15171b" stroke-width="3.5" />
-            <polygon points="44,3 26,31 34,31 20,61 46,25 37,25" fill="#b3221c" />
-          </svg>
-        </span>
+      <svg class="picon" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+        <polygon points="16.0,4.0 18.8,12.1 27.4,12.3 20.6,17.5 23.1,25.7 16.0,20.8 8.9,25.7 11.4,17.5 4.6,12.3 13.2,12.1" fill="#b3221c" />
+        <rect x="5.5" y="2" width="3.2" height="28" fill="#15171b" />
+        <rect x="14.4" y="2" width="3.2" height="28" fill="#15171b" />
+        <rect x="23.3" y="2" width="3.2" height="28" fill="#15171b" />
+      </svg>
+      <div class="pcopy">
+        <div class="kick">CHINA</div>
+        <h3>XI PURGES SHANGHAI&rsquo;S<br>PARTY BOSS</h3>
+        <p>Chen Jining, once seen as a future leader, is investigated.</p>
       </div>
-      <p class="panel-note">RSF drones struck Khartoum as the power system neared collapse; the army says it intercepted them.</p>
+    </article>
+
+    <article class="panel slate">
+      <svg class="picon" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+        <polygon points="19,2 9,18 14,18 8,30 23,13 17,13" fill="#b3221c" />
+      </svg>
+      <div class="pcopy">
+        <div class="kick">AFRICA</div>
+        <h3>SUDAN&rsquo;S CAPITAL HIT<br>AS ITS GRID FAILS</h3>
+        <p>RSF drones strike Khartoum as the power system nears collapse.</p>
+      </div>
     </article>
 
     <article class="panel">
-      <div class="panel-top">
-        <div class="panel-copy">
-          <div class="kicker">HEALTH</div>
-          <h3>EBOLA TEAMS PULLED<br>FROM CONGO HOSPITAL</h3>
-        </div>
-        <span class="chip">
-          <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="32" cy="32" r="25" fill="none" stroke="#15171b" stroke-width="4" />
-            <circle cx="32" cy="21" r="7.5" fill="none" stroke="#b3221c" stroke-width="4" />
-            <circle cx="41.5" cy="37.5" r="7.5" fill="none" stroke="#b3221c" stroke-width="4" />
-            <circle cx="22.5" cy="37.5" r="7.5" fill="none" stroke="#b3221c" stroke-width="4" />
-            <circle cx="32" cy="32" r="4.5" fill="#b3221c" />
-          </svg>
-        </span>
+      <svg class="picon" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+        <line x1="2" y1="25" x2="13" y2="18" stroke="#15171b" stroke-width="3.5" />
+        <line x1="30" y1="25" x2="19" y2="18" stroke="#15171b" stroke-width="3.5" />
+        <rect x="11.5" y="13" width="9" height="7.5" rx="2" fill="#b3221c" />
+      </svg>
+      <div class="pcopy">
+        <div class="kick">AFRICA</div>
+        <h3>KENYA AND CONGO<br>MAKE UP</h3>
+        <p>Both restore their ambassadors, ending a freeze of nearly three years.</p>
       </div>
-      <p class="panel-note">The WHO moved staff out as conflict flared in a record outbreak; 53 tonnes of aid arrived.</p>
+    </article>
+
+    <article class="panel slate">
+      <svg class="picon" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+        <rect x="12" y="9" width="8" height="16" rx="1.5" fill="#ffffff" stroke="#15171b" stroke-width="3" />
+        <rect x="10.5" y="5" width="11" height="4" fill="#15171b" />
+        <rect x="13.5" y="15" width="5" height="8" fill="#b3221c" />
+      </svg>
+      <div class="pcopy">
+        <div class="kick">HEALTH</div>
+        <h3>EBOLA VACCINE<br>DEAL SIGNED</h3>
+        <p>Gavi secures up to 1.5 million doses as DR Congo&rsquo;s outbreak rages.</p>
+      </div>
     </article>
 
     <article class="panel">
-      <div class="panel-top">
-        <div class="panel-copy">
-          <div class="kicker">AMERICAS</div>
-          <h3>BRAZIL CUTS TIES<br>WITH ARGENTINA</h3>
-        </div>
-        <span class="chip">
-          <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
-            <line x1="6" y1="4" x2="6" y2="60" stroke="#15171b" stroke-width="4.5" />
-            <rect x="9" y="8" width="19" height="18" fill="#1b7a45" />
-            <polygon points="18.5,11 26.5,17 18.5,23 10.5,17" fill="#e8b93b" />
-            <line x1="42" y1="4" x2="42" y2="60" stroke="#15171b" stroke-width="4.5" />
-            <rect x="45" y="8" width="19" height="18" fill="#2f6fb5" />
-            <rect x="45" y="13.9" width="19" height="6" fill="#ffffff" />
-            <polyline points="35,1 31,16 38,30 31,45 35,62" fill="none" stroke="#b3221c" stroke-width="5" />
-          </svg>
-        </span>
+      <svg class="picon" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+        <rect x="12.5" y="3" width="7" height="18" rx="3.5" fill="#ffffff" stroke="#15171b" stroke-width="3" />
+        <circle cx="16" cy="24.5" r="5" fill="#ffffff" stroke="#15171b" stroke-width="3" />
+        <line x1="16" y1="21" x2="16" y2="8" stroke="#b3221c" stroke-width="3" />
+        <circle cx="16" cy="24.5" r="2.6" fill="#b3221c" />
+      </svg>
+      <div class="pcopy">
+        <div class="kick">HEALTH</div>
+        <h3>A THIRD MEASLES<br>DEATH IN WISCONSIN</h3>
+        <p>Cases reach 920 as the outbreak spreads past its first community.</p>
       </div>
-      <p class="panel-note">Lula drops Milei from his inauguration and recalls his ambassador from Buenos Aires.</p>
     </article>
 
-    <div class="strip">
-      <article class="brief">
-        <div class="brief-copy">
-          <div class="kicker">EUROPE</div>
-          <h4>UKRAINE&rsquo;S DRONES<br>HIT RUSSIAN SHIPS</h4>
-        </div>
-        <span class="chip">
-          <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
-            <line x1="41" y1="34" x2="50" y2="34" stroke="#15171b" stroke-width="3.5" stroke-linecap="round" />
-            <line x1="37.8" y1="41.8" x2="44.1" y2="48.1" stroke="#15171b" stroke-width="3.5" stroke-linecap="round" />
-            <line x1="30" y1="45" x2="30" y2="54" stroke="#15171b" stroke-width="3.5" stroke-linecap="round" />
-            <line x1="22.2" y1="41.8" x2="15.9" y2="48.1" stroke="#15171b" stroke-width="3.5" stroke-linecap="round" />
-            <line x1="19" y1="34" x2="10" y2="34" stroke="#15171b" stroke-width="3.5" stroke-linecap="round" />
-            <line x1="22.2" y1="26.2" x2="15.9" y2="19.9" stroke="#15171b" stroke-width="3.5" stroke-linecap="round" />
-            <line x1="30" y1="23" x2="30" y2="14" stroke="#15171b" stroke-width="3.5" stroke-linecap="round" />
-            <line x1="37.8" y1="26.2" x2="44.1" y2="19.9" stroke="#15171b" stroke-width="3.5" stroke-linecap="round" />
-            <circle cx="30" cy="34" r="11" fill="#15171b" />
-            <line x1="5" y1="7" x2="40" y2="42" stroke="#b3221c" stroke-width="5.5" />
-            <polygon points="50,52 35.2,47.1 45.1,37.2" fill="#b3221c" />
-          </svg>
-        </span>
-      </article>
+    <article class="panel slate">
+      <svg class="picon" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+        <rect x="9" y="3" width="14" height="10" rx="2" fill="#15171b" />
+        <polygon points="3,20 29,20 27,26 5,26" fill="#15171b" />
+        <line x1="2" y1="29" x2="30" y2="29" stroke="#b3221c" stroke-width="3" />
+      </svg>
+      <div class="pcopy">
+        <div class="kick">AMERICAS</div>
+        <h3>TRUMP EYES A<br>TARIFF BLITZ</h3>
+        <p>New tariffs are prepared for China, the EU, Mexico and Japan.</p>
+      </div>
+    </article>
 
-      <article class="brief">
-        <div class="brief-copy">
-          <div class="kicker">UK</div>
-          <h4>NO EU RETURN WITHOUT<br>A VOTE, PM SAYS</h4>
-        </div>
-        <span class="chip">
-          <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
-            <rect x="21" y="3" width="22" height="26" fill="#ffffff" stroke="#15171b" stroke-width="3.5" />
-            <line x1="25" y1="9" x2="39" y2="23" stroke="#b3221c" stroke-width="5" />
-            <line x1="39" y1="9" x2="25" y2="23" stroke="#b3221c" stroke-width="5" />
-            <rect x="9" y="27" width="46" height="30" fill="#15171b" />
-            <line x1="17" y1="33" x2="47" y2="33" stroke="#f2efe6" stroke-width="3" />
-          </svg>
-        </span>
-      </article>
+    <article class="panel">
+      <svg class="picon" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+        <line x1="4" y1="3" x2="4" y2="29" stroke="#15171b" stroke-width="3" />
+        <rect x="6" y="5" width="9" height="8" fill="#1b7a45" />
+        <polygon points="10.5,6.5 13.5,9 10.5,11.5 7.5,9" fill="#e8b93b" />
+        <line x1="21" y1="3" x2="21" y2="29" stroke="#15171b" stroke-width="3" />
+        <rect x="23" y="5" width="8" height="8" fill="#2f6fb5" />
+        <rect x="23" y="7.8" width="8" height="2.4" fill="#ffffff" />
+        <polyline points="17.5,1 15.5,8 18.5,16 15.5,24 17.5,31" fill="none" stroke="#b3221c" stroke-width="2.8" />
+      </svg>
+      <div class="pcopy">
+        <div class="kick">AMERICAS</div>
+        <h3>BRAZIL CUTS TIES<br>WITH ARGENTINA</h3>
+        <p>Lula drops Milei from his inauguration and recalls his ambassador.</p>
+      </div>
+    </article>
 
-      <article class="brief">
-        <div class="brief-copy">
-          <div class="kicker">SOUTH ASIA</div>
-          <h4>CYCLONE AKVAN: SEVEN<br>FISHERMEN MISSING</h4>
-        </div>
-        <span class="chip">
-          <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
-            <path d="M52.8,20 A24,24 0 1 1 11.2,20" fill="none" stroke="#15171b" stroke-width="4.5" />
-            <path d="M40.5,18.1 A16,16 0 1 1 24.5,45.9" fill="none" stroke="#15171b" stroke-width="4" />
-            <path d="M23.5,32 A9,9 0 0 1 36.5,24.2" fill="none" stroke="#15171b" stroke-width="3.5" />
-            <circle cx="32" cy="32" r="3.6" fill="#b3221c" />
-          </svg>
-        </span>
-      </article>
-    </div>
+    <article class="panel slate">
+      <svg class="picon" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+        <polygon points="16,3 28,7.5 28,15 16,29 4,15 4,7.5" fill="#ffffff" stroke="#15171b" stroke-width="3" />
+        <polyline points="9.5,13 16,19 22.5,13" fill="none" stroke="#b3221c" stroke-width="2.5" />
+      </svg>
+      <div class="pcopy">
+        <div class="kick">AMERICAS</div>
+        <h3>PENTAGON PRESSES<br>CANADA ON DEFENCE</h3>
+        <p>Washington threatens further measures unless Ottawa spends more on its military.</p>
+      </div>
+    </article>
+
+    <article class="panel">
+      <svg class="picon" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+        <path d="M26.4,10 A15,15 0 1 1 5.6,10" fill="none" stroke="#15171b" stroke-width="3" />
+        <path d="M20.2,9 A8.5,8.5 0 1 1 12.4,22.6" fill="none" stroke="#15171b" stroke-width="2.5" />
+        <path d="M11.8,16 A4.5,4.5 0 0 1 18.4,12.1" fill="none" stroke="#15171b" stroke-width="2.2" />
+        <circle cx="16" cy="16" r="2.6" fill="#b3221c" />
+      </svg>
+      <div class="pcopy">
+        <div class="kick">SOUTH ASIA</div>
+        <h3>CYCLONE AKVAN: SEVEN<br>FISHERMEN MISSING</h3>
+        <p>The navy searches the Bay of Bengal; a 5.3 quake in Nepal shook Bengal and Sikkim.</p>
+      </div>
+    </article>
+
+    <article class="panel slate">
+      <svg class="picon" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+        <line x1="23" y1="17" x2="28.5" y2="17" stroke="#15171b" stroke-width="3" stroke-linecap="round" />
+        <line x1="20.7" y1="22.7" x2="24.5" y2="26.5" stroke="#15171b" stroke-width="3" stroke-linecap="round" />
+        <line x1="15" y1="25" x2="15" y2="30.5" stroke="#15171b" stroke-width="3" stroke-linecap="round" />
+        <line x1="9.3" y1="22.7" x2="5.5" y2="26.5" stroke="#15171b" stroke-width="3" stroke-linecap="round" />
+        <line x1="7" y1="17" x2="1.5" y2="17" stroke="#15171b" stroke-width="3" stroke-linecap="round" />
+        <line x1="9.3" y1="11.3" x2="5.5" y2="7.5" stroke="#15171b" stroke-width="3" stroke-linecap="round" />
+        <line x1="15" y1="9" x2="15" y2="3.5" stroke="#15171b" stroke-width="3" stroke-linecap="round" />
+        <line x1="20.7" y1="11.3" x2="24.5" y2="7.5" stroke="#15171b" stroke-width="3" stroke-linecap="round" />
+        <circle cx="15" cy="17" r="8" fill="#15171b" />
+        <line x1="6" y1="6" x2="22" y2="22" stroke="#b3221c" stroke-width="3.5" />
+        <polygon points="29,29 19.4,25.8 25.8,19.4" fill="#b3221c" />
+      </svg>
+      <div class="pcopy">
+        <div class="kick">EUROPE</div>
+        <h3>UKRAINE&rsquo;S DRONES<br>HIT RUSSIAN SHIPS</h3>
+        <p>Two vessels are struck in a Libyan port as Britain warns its firms of sabotage.</p>
+      </div>
+    </article>
+
+    <article class="panel">
+      <svg class="picon" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+        <rect x="9" y="3" width="14" height="26" rx="3" fill="#ffffff" stroke="#15171b" stroke-width="3" />
+        <line x1="14" y1="6.5" x2="18" y2="6.5" stroke="#15171b" stroke-width="2" />
+        <line x1="3" y1="29" x2="29" y2="3" stroke="#b3221c" stroke-width="3.5" />
+      </svg>
+      <div class="pcopy">
+        <div class="kick">TECH</div>
+        <h3>SIGNAL MOVES TO<br>LIMIT AI AGENTS</h3>
+        <p>The messaging app joins airlines and banks in curbing agents over customer risk.</p>
+      </div>
+    </article>
+
+    <article class="panel slate">
+      <svg class="picon" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="11" cy="12" r="5" fill="#15171b" />
+        <circle cx="20.5" cy="11.5" r="5.5" fill="#15171b" />
+        <rect x="8" y="12" width="16" height="5" fill="#15171b" />
+        <line x1="11" y1="20" x2="8.5" y2="27" stroke="#b3221c" stroke-width="2.5" />
+        <line x1="17" y1="20" x2="14.5" y2="27" stroke="#b3221c" stroke-width="2.5" />
+        <line x1="23" y1="20" x2="20.5" y2="27" stroke="#b3221c" stroke-width="2.5" />
+      </svg>
+      <div class="pcopy">
+        <div class="kick">WEATHER</div>
+        <h3 class="tight">A NOR&rsquo;EASTER<br>THREATENS THANKSGIVING</h3>
+        <p>Millions on the US East Coast face one of the rainiest Thanksgivings in memory.</p>
+      </div>
+    </article>
   </section>
 
   <footer class="footer">
     <span class="also">ALSO TODAY</span>
-    <span class="ftxt">Japan boosts its coast guard &middot; Trump: &ldquo;expedite&rdquo; federal executions &middot; 5.3 quake shakes Nepal, Bengal and Sikkim</span>
+    <span class="ftxt">Trump pardons turkeys Freedom and Feathers &middot; UK PM: no EU return without a vote &middot; Japan bolsters its coast guard</span>
   </footer>
 </body>
 </html>

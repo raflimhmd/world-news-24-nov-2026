@@ -1,5 +1,9 @@
 # world-news-24-nov-2026
 
+[![make.fun · news-image-20261124](https://make.fun/badge/news-image-20261124.svg)](https://make.fun/bounty/news-image-20261124?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261124)
+[![rank](https://make.fun/badge/news-image-20261124/raflimhmd/world-news-24-nov-2026/rank.svg)](https://make.fun/bounty/news-image-20261124/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261124)
+[![reward](https://make.fun/badge/news-image-20261124/raflimhmd/world-news-24-nov-2026/reward.svg)](https://make.fun/bounty/news-image-20261124?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261124)
+
 An entry for make.fun's bounty **"Sum up 24 November's world news in one image"**
 (competition `news-image-20261124`): one image that sums up Tuesday 24 November 2026.
 
@@ -37,17 +41,9 @@ this build used):
 node image-source/make-image.mjs
 ```
 
-## make.fun badges
+## Entered in the bounty
 
-The competition asks the repository's README to carry three live make.fun badges (the competition
-badge, and this repository's rank and reward badges) and the GitHub About to name make.fun as the
-website with the `makefun` topic. **The badges are added next, at submission time**; they will be:
-
-```text
-https://make.fun/badge/news-image-20261124.svg
-https://make.fun/badge/news-image-20261124/raflimhmd/world-news-24-nov-2026/rank.svg
-https://make.fun/badge/news-image-20261124/raflimhmd/world-news-24-nov-2026/reward.svg
-```
+This repository is entered in [make.fun/bounty/news-image-20261124](https://make.fun/bounty/news-image-20261124).
 
 ## Sources
 
